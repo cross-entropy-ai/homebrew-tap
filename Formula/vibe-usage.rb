@@ -6,16 +6,21 @@ class VibeUsage < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/cross-entropy-ai/vibe-usage/releases/download/v0.2.0/vibe-usage-v0.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "103433e909ed70b5a1530a998b0c85d8a15dd5f4280d9623433254892841400a"
+      sha256 "8789d96e2268e510d88717c7f06de412c3447a42f387befbee66f8109f7a903b"
     else
       url "https://github.com/cross-entropy-ai/vibe-usage/releases/download/v0.2.0/vibe-usage-v0.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "05964613edb6511ff1e8a6b6c553d44891448ed5d6f942f8a24920f9bc90e866"
+      sha256 "3e63c3a454eb4aa86e086e16a8f7041ba16ec11aa40befef2d73e108cfc53845"
     end
   end
 
   on_linux do
-    url "https://github.com/cross-entropy-ai/vibe-usage/releases/download/v0.2.0/vibe-usage-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "45feed7c632f3ba62a69879cd6a3055059f7b70976d0b834cc8103d5299cf52f"
+    if Hardware::CPU.arm?
+      url "https://github.com/cross-entropy-ai/vibe-usage/releases/download/v0.2.0/vibe-usage-v0.2.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "bc6923647b0e8fa3baf9286b23c75f85eb2a38b4fec8be531fa0684ccbb06eab"
+    else
+      url "https://github.com/cross-entropy-ai/vibe-usage/releases/download/v0.2.0/vibe-usage-v0.2.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "9ecafcf61c1bce61a1efe1cd46d0a25c3b1a623c43e05dfa478e868ad51ec052"
+    end
   end
 
   def install
