@@ -1,25 +1,25 @@
 class VibeUsage < Formula
   desc "Collect and analyze conversation data from AI coding tools"
   homepage "https://github.com/cross-entropy-ai/vibe-usage"
-  version "0.2.5"
+  version "0.2.6"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/vibe-usage/releases/download/v0.2.5/vibe-usage-v0.2.5-aarch64-apple-darwin.tar.gz"
-      sha256 "e56d0ed7d50cff400e155150a9a4ade27ac745e78d0eac45077cf6e2b3feecb2"
+      url "https://github.com/cross-entropy-ai/vibe-usage/releases/download/v0.2.6/vibe-usage-v0.2.6-aarch64-apple-darwin.tar.gz"
+      sha256 "5eb92f0348e86ea6db0ac7e04ccbb4cd01ac8a60022b09fd8b04ca77d92d18ac"
     else
-      url "https://github.com/cross-entropy-ai/vibe-usage/releases/download/v0.2.5/vibe-usage-v0.2.5-x86_64-apple-darwin.tar.gz"
-      sha256 "3b7ec51d9179ddf2781ba8810c20de79790a2b20f7da7cbc75200922c64b1132"
+      url "https://github.com/cross-entropy-ai/vibe-usage/releases/download/v0.2.6/vibe-usage-v0.2.6-x86_64-apple-darwin.tar.gz"
+      sha256 "60583e114e67db9821981103d17454e11d5ad4ed2b3c2bf2e5765e242757beb2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/vibe-usage/releases/download/v0.2.5/vibe-usage-v0.2.5-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "ae1d7d25db181d184e99106256f6f7033e9e9b8fd53b7680e07f7a4938167dfa"
+      url "https://github.com/cross-entropy-ai/vibe-usage/releases/download/v0.2.6/vibe-usage-v0.2.6-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d0e86e697d304fade1207852c1e1dcc9dcd2164d60a63a8eebfaa2d569366257"
     else
-      url "https://github.com/cross-entropy-ai/vibe-usage/releases/download/v0.2.5/vibe-usage-v0.2.5-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "b5b5a29fc22dfa7b6c31698161d40f2c9b11476401bd4d49f95424891214a0d8"
+      url "https://github.com/cross-entropy-ai/vibe-usage/releases/download/v0.2.6/vibe-usage-v0.2.6-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "75035ea64cef9eb5c071e5c4b8a14da5b552267a75c7fd9b87d324092cdde6db"
     end
   end
 
