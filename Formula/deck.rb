@@ -1,25 +1,25 @@
 class Deck < Formula
   desc "Terminal sidebar for browsing and switching tmux sessions"
   homepage "https://github.com/cross-entropy-ai/deck"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.1.4/deck-v0.1.4-aarch64-apple-darwin.tar.gz"
-      sha256 "59f66ea05bd756e11e6c15ed48bf7003a9f4c9224df5c6175034293fe8000c34"
+      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.1.5/deck-v0.1.5-aarch64-apple-darwin.tar.gz"
+      sha256 "6bdff3c9aafcadb33aedca53e533d4454b8d377ae95ceb73f56dcec0b5448abd"
     else
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.1.4/deck-v0.1.4-x86_64-apple-darwin.tar.gz"
-      sha256 "d8033b575679738e70737779ff39f214b148755aecd0dc0c4bda757fb6b89518"
+      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.1.5/deck-v0.1.5-x86_64-apple-darwin.tar.gz"
+      sha256 "a7020f86a1421163c5b8f7e7ccb0259df660d5cc2db1b1a3decf002ac1e5cf44"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.1.4/deck-v0.1.4-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "9a1720e3a666d040db62cfb36e5df4137a9e1a7fad25a94c276efba5a3d1c818"
+      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.1.5/deck-v0.1.5-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "5ec2e94b819cd42fe1f436853d4a7c52cd9390f4df2dc4d519f245cb61c86a2b"
     else
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.1.4/deck-v0.1.4-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "4177e15769e8913274ba2628b2af866128c08b1f4d3897565d5d9fffd329fd34"
+      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.1.5/deck-v0.1.5-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "fc50a89400cfd7837f116040dcc6987d76476d395f3815ff74a36384691f47ab"
     end
   end
 
