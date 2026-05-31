@@ -1,25 +1,30 @@
 class Deck < Formula
   desc "Terminal sidebar for browsing and switching tmux sessions"
   homepage "https://github.com/cross-entropy-ai/deck"
-  version "0.5.1"
+  version "0.5.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.5.1/deck-v0.5.1-aarch64-apple-darwin.tar.gz"
-      sha256 "c19385b2cbe548f006517a12f037b9f5721a72adcbeb0cc00a542997d3c6694e"
+      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.5.2/deck-v0.5.2-aarch64-apple-darwin.tar.gz"
+      sha256 "e9286b3a98d0d41f6759baf8c6f8ae2576392a1690eb90ca726137e918df12d6"
     else
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.5.1/deck-v0.5.1-x86_64-apple-darwin.tar.gz"
-      sha256 "c203de502451052a2270a86782af462bd96079c7cac536f79bc98ecc738d1d2b"
+      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.5.2/deck-v0.5.2-x86_64-apple-darwin.tar.gz"
+      sha256 "6be43228b6b120aff92ddc0fc6d9382f14bfbdf6041dde697d02ff082eef3802"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.5.1/deck-v0.5.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "d504c16a12ac1c78cb9ebb37def4a74c240f860905f5c92b12aa428eb93928d9"
+      if Hardware::CPU.is_32_bit?
+        url "https://github.com/cross-entropy-ai/deck/releases/download/v0.5.2/deck-v0.5.2-armv7-unknown-linux-musleabihf.tar.gz"
+        sha256 "6951ba8f9da138e04191e8741e7762ba11695e1ee903547bb3055299aae867bf"
+      else
+        url "https://github.com/cross-entropy-ai/deck/releases/download/v0.5.2/deck-v0.5.2-aarch64-unknown-linux-musl.tar.gz"
+        sha256 "daad9a09ebc3ace9990196b4f546b4e41404f18fd1216f303cc24983be0e9f99"
+      end
     else
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.5.1/deck-v0.5.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "3010c9ada29289ecb6d9a607ce489af8b88e7803e85c0273f7fcff042037b21a"
+      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.5.2/deck-v0.5.2-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "a4de62a9641fe34c9c56f8069f5695282a9d1b9487ffc37965f63356210a0560"
     end
   end
 
