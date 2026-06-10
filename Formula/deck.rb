@@ -1,30 +1,30 @@
 class Deck < Formula
   desc "Terminal sidebar for browsing and switching tmux sessions"
   homepage "https://github.com/cross-entropy-ai/deck"
-  version "0.9.0"
+  version "0.9.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.9.0/deck-v0.9.0-aarch64-apple-darwin.tar.gz"
-      sha256 "3c960ea98c1a92a10ee687a778183ab8d7abe93a38a0ef6541f55770eb24e179"
+      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.9.1/deck-v0.9.1-aarch64-apple-darwin.tar.gz"
+      sha256 "8ec9b9468fe5363fabcc5fd982a7722ebe12085ab278585513ada368bc7ffc85"
     else
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.9.0/deck-v0.9.0-x86_64-apple-darwin.tar.gz"
-      sha256 "77b2def3a980e98e08f805d22dc43930073d886b4e862b322080e1eeccce05c6"
+      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.9.1/deck-v0.9.1-x86_64-apple-darwin.tar.gz"
+      sha256 "3146b368125b36cf50cd2cc39fbd82b27e237f0852329ac8275b356d8b34fe5e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       if Hardware::CPU.is_32_bit?
-        url "https://github.com/cross-entropy-ai/deck/releases/download/v0.9.0/deck-v0.9.0-armv7-unknown-linux-musleabihf.tar.gz"
-        sha256 "02dd5bc6c78da216a86ccdc12c27f323677ebfedfcf76ccb54803910549f74cc"
+        url "https://github.com/cross-entropy-ai/deck/releases/download/v0.9.1/deck-v0.9.1-armv7-unknown-linux-musleabihf.tar.gz"
+        sha256 "6fc5154ca1edc123eaa5fac1135b189ed18d9d46533afce0859099af1c1bda76"
       else
-        url "https://github.com/cross-entropy-ai/deck/releases/download/v0.9.0/deck-v0.9.0-aarch64-unknown-linux-musl.tar.gz"
-        sha256 "afe41a1e4390aa2854656df62e0fbe5659fda7e4106916faeb72f11b0e69dc67"
+        url "https://github.com/cross-entropy-ai/deck/releases/download/v0.9.1/deck-v0.9.1-aarch64-unknown-linux-musl.tar.gz"
+        sha256 "664046e894f52acb965f469a89ced2aa7296dff5a97e3d7e3903202ba5168ac5"
       end
     else
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.9.0/deck-v0.9.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "1a7e30df1399acffec112be7adef577c5a274ecaa59b4ea225e6078c343fa290"
+      url "https://github.com/cross-entropy-ai/deck/releases/download/v0.9.1/deck-v0.9.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "871447e6fc3ee78867c28d452ddf779e07b2acdc67333ef977bd5fb1c9f4bfc0"
     end
   end
 
