@@ -1,34 +1,34 @@
 class Deck < Formula
   desc "Terminal sidebar for browsing and switching tmux sessions"
   homepage "https://github.com/cross-entropy-ai/deck"
-  version "1.2.0"
+  version "1.2.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v1.2.0/deck-v1.2.0-aarch64-apple-darwin.tar.gz"
-      sha256 "7808d614ff5a970db2609cd204d8e7d91c32b6496f9a679c3d078c0c1bd4c64c"
+      url "https://github.com/cross-entropy-ai/deck/releases/download/v1.2.1/deck-v1.2.1-aarch64-apple-darwin.tar.gz"
+      sha256 "b11c708afa64a3e31cad6dbff2e0b28f6712d9446abe2c11ea4ac7702b5e9ddb"
     else
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v1.2.0/deck-v1.2.0-x86_64-apple-darwin.tar.gz"
-      sha256 "743afaa3af45a07f1f872a6d68de735c6dac4b218e9249c3767ff384895f1357"
+      url "https://github.com/cross-entropy-ai/deck/releases/download/v1.2.1/deck-v1.2.1-x86_64-apple-darwin.tar.gz"
+      sha256 "dd8bdbf2cb6f9071db4a22c709746a792ef2e59ca11ffbf3a5c5cceb0748693b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v1.2.0/deck-v1.2.0-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "b8d0dace5c70cfbc3d34b24afbeb138f7258c47ffd37564ca374ad27c0b67093"
+      url "https://github.com/cross-entropy-ai/deck/releases/download/v1.2.1/deck-v1.2.1-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "1079f6cd64f1c52851a768d2d37a85ad9d15a47dc886e113c0994670bd1508c7"
     else
-      url "https://github.com/cross-entropy-ai/deck/releases/download/v1.2.0/deck-v1.2.0-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "0dd058361401242eae523ef9d15ccc7127254fa8c2ea952b4c3a28827d890441"
+      url "https://github.com/cross-entropy-ai/deck/releases/download/v1.2.1/deck-v1.2.1-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "7f34277d33b0a420e2d79a7a3c7416bdced43ec54832a020e8dc50247d35bde7"
     end
   end
 
   bottle do
-    root_url "https://github.com/cross-entropy-ai/deck/releases/download/v1.2.0"
-    sha256 cellar: :any_skip_relocation, arm64_ventura: "9de79bb76912f48cb57cd9486bcefd1ab266e18657c6cc0146b7977391f2e6b2"
-    sha256 cellar: :any_skip_relocation, ventura:       "d38e555e960aa5b79f0e9e34fe537d67e58c6b0079bd8503e23041bd993d2fab"
-    sha256 cellar: :any_skip_relocation, arm64_linux:   "d9da0149ea6806f2644259f9ba656673d8ba17b7f4f0c2b491dd0cd9296595e7"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "101f15a0e372ded354869f66b61bce09824bc1e8a0be3c4a1826a3e82e65657b"
+    root_url "https://github.com/cross-entropy-ai/deck/releases/download/v1.2.1"
+    sha256 cellar: :any_skip_relocation, arm64_ventura: "04f78e92c5f7cfca7048534b9eaec0bc2d8e583f03492b6ba43ab64f018ecfc7"
+    sha256 cellar: :any_skip_relocation, ventura:       "76047bd21b7bb14edc187be98d7cea85b6f3a2869d5157b7d764b06ca4b0b34a"
+    sha256 cellar: :any_skip_relocation, arm64_linux:   "f9ad3d7923a3208ee9054a430f92e3ad881164c93c94908277699afbae028613"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "fd9ed67ab27f9a054dd933e101b9e7cde07007c7775cba566c67cafa0c6efc13"
   end
 
   depends_on "tmux"
