@@ -2,25 +2,25 @@
 class GitReview < Formula
   desc "Review branch and working-tree changes in your terminal"
   homepage "https://github.com/cross-entropy-ai/git-review"
-  version "1.6.0"
+  version "1.7.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/git-review/releases/download/v1.6.0/git-review_darwin_arm64.tar.gz"
-      sha256 "933c54596afe8b5b4b301bb9281de776cde6be73a45188562c05c9e9b3ea2afe"
+      url "https://github.com/cross-entropy-ai/git-review/releases/download/v1.7.0/git-review_darwin_arm64.tar.gz"
+      sha256 "8b3a4be8aedfc8fc468af7273d06f24cb04b3e689896cdd54f4a4703a156a047"
     else
-      url "https://github.com/cross-entropy-ai/git-review/releases/download/v1.6.0/git-review_darwin_amd64.tar.gz"
-      sha256 "8bccfd83262189a753cfc594f909965690966128eeaded20891967b0e5cb53e5"
+      url "https://github.com/cross-entropy-ai/git-review/releases/download/v1.7.0/git-review_darwin_amd64.tar.gz"
+      sha256 "ee331384b0d29c50740a5fda10a3492e6957e9ec0c795f9973e5d8d3e01deb84"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/git-review/releases/download/v1.6.0/git-review_linux_arm64.tar.gz"
-      sha256 "307999b2457fadb0a5ef1f100d16da2572587d3ed160b588773040bbf9f86b4e"
+      url "https://github.com/cross-entropy-ai/git-review/releases/download/v1.7.0/git-review_linux_arm64.tar.gz"
+      sha256 "690ab0c990a65ae89033d88b91ccc4155b5fbd4fd71eecaf849fb92e90421942"
     else
-      url "https://github.com/cross-entropy-ai/git-review/releases/download/v1.6.0/git-review_linux_amd64.tar.gz"
-      sha256 "e10968d3953c3a015d4425c4798ce7eae104a69911ddaae854506f4b75051a60"
+      url "https://github.com/cross-entropy-ai/git-review/releases/download/v1.7.0/git-review_linux_amd64.tar.gz"
+      sha256 "3b4ebf86085e092c6fd1714cd08426b844d02370bb16a514ae27af3db1669d70"
     end
   end
 
