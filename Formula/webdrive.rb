@@ -2,26 +2,26 @@
 class Webdrive < Formula
   desc "Browse and manage files over HTTP from a single binary"
   homepage "https://github.com/cross-entropy-ai/webdrive"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/webdrive/releases/download/v0.2.2/webdrive_darwin_arm64.tar.gz"
-      sha256 "7d4847d9645b3c3e688f90f7930c53dcdd8960bd3454f4915eaf5304a602578b"
+      url "https://github.com/cross-entropy-ai/webdrive/releases/download/v0.2.3/webdrive_darwin_arm64.tar.gz"
+      sha256 "759b40cd2bc8a7776b26b4a40aaf1f381c7278b10e8dc87a917be0b05f1f20f3"
     else
-      url "https://github.com/cross-entropy-ai/webdrive/releases/download/v0.2.2/webdrive_darwin_amd64.tar.gz"
-      sha256 "363c7a75d4efdeead99539cd619dc5d9cf131b9150a74d549aa85bef00ff8b38"
+      url "https://github.com/cross-entropy-ai/webdrive/releases/download/v0.2.3/webdrive_darwin_amd64.tar.gz"
+      sha256 "dcb9eebbb6d92465e64bd4a6cc330e04d45b59968bfd8dbdbc26827d7e6d1a3e"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/webdrive/releases/download/v0.2.2/webdrive_linux_arm64.tar.gz"
-      sha256 "2752385fe85f1916412414b9a6e843f7640f38543c875582118df119dc4b27c5"
+      url "https://github.com/cross-entropy-ai/webdrive/releases/download/v0.2.3/webdrive_linux_arm64.tar.gz"
+      sha256 "af057ad410f77065a7f709e6e69e8ed6d6763075ef6657be04c4175458c8a90d"
     else
-      url "https://github.com/cross-entropy-ai/webdrive/releases/download/v0.2.2/webdrive_linux_amd64.tar.gz"
-      sha256 "ac925c5552eae0a8357bb48320975fc6c75a6f1b08518ec2d97c6a90e68a2117"
+      url "https://github.com/cross-entropy-ai/webdrive/releases/download/v0.2.3/webdrive_linux_amd64.tar.gz"
+      sha256 "da5869d3101fb86373d720e38f860309b910c48a885abaa0682b47db42e78ec6"
     end
   end
 
