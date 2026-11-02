@@ -22,6 +22,7 @@ brew upgrade vibe-usage
 | [git-review](https://github.com/cross-entropy-ai/git-review) | Review branch and working-tree changes in your terminal |
 | [webdrive](https://github.com/cross-entropy-ai/webdrive) | Browse and manage files over HTTP |
 | [vibe-usage](https://github.com/cross-entropy-ai/vibe-usage) | Collect and analyze conversation data from AI coding tools |
+| [meep](https://github.com/cross-entropy-ai/meep) (cask) | Menu bar app that records your meetings |
 
 ## git review
 
@@ -51,3 +52,16 @@ checks new stable releases twice an hour, verifies the published formula's SHA-2
 checksum, and commits updates automatically. Maintainers can run the workflow
 manually for immediate synchronization. It uses this repository's `GITHUB_TOKEN`
 and requires no additional secrets.
+
+## meep
+
+```sh
+brew install --cask cross-entropy-ai/tap/meep
+```
+
+Upgrade with `brew update && brew upgrade --cask meep`. Installs the notarized
+Meep.app (macOS 15+, Apple Silicon) and the `meep` command.
+
+The [Sync meep workflow](https://github.com/cross-entropy-ai/homebrew-tap/actions/workflows/sync-meep.yml)
+checks new stable releases twice an hour, verifies `meep.rb` against the release's
+`checksums.txt`, and commits `Casks/meep.rb` automatically.

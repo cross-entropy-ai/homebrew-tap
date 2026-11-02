@@ -1,0 +1,35 @@
+name: Sync meep
+
+on:
+  schedule:
+    - cron: '7,37 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-meep
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - name: Test updater
+        run: python3 -m unittest discover -s scripts -p 'test_*.py'
+      - name: Download and verify formula
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/sync_meep.py
+      - name: Commit and push formula
+        run: |
+          git add Casks/meep.rb
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore: update meep cask'
+          git push origin HEAD:main
