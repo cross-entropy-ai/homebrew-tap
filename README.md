@@ -23,6 +23,7 @@ brew upgrade vibe-usage
 | [webdrive](https://github.com/cross-entropy-ai/webdrive) | Browse and manage files over HTTP |
 | [vibe-usage](https://github.com/cross-entropy-ai/vibe-usage) | Collect and analyze conversation data from AI coding tools |
 | [meep](https://github.com/cross-entropy-ai/meep) (cask) | Menu bar app that records your meetings |
+| [moop](https://github.com/cross-entropy-ai/moop) | Transcribe audio from the terminal; companion to Meep |
 
 ## git review
 
@@ -65,3 +66,18 @@ Meep.app (macOS 15+, Apple Silicon) and the `meep` command.
 The [Sync meep workflow](https://github.com/cross-entropy-ai/homebrew-tap/actions/workflows/sync-meep.yml)
 checks new stable releases twice an hour, verifies `meep.rb` against the release's
 `checksums.txt`, and commits `Casks/meep.rb` automatically.
+
+## moop
+
+```sh
+brew install cross-entropy-ai/tap/moop
+moop login
+moop recording.m4a
+```
+
+Upgrade with `brew update && brew upgrade moop`. Installs a precompiled binary
+for macOS or Linux on amd64 or arm64.
+
+The [Sync moop workflow](https://github.com/cross-entropy-ai/homebrew-tap/actions/workflows/sync-moop.yml)
+checks new stable releases twice an hour, verifies `moop.rb` against the release's
+`checksums.txt`, and commits `Formula/moop.rb` automatically.
