@@ -2,26 +2,26 @@
 class Moop < Formula
   desc "Transcribe audio from the terminal; companion to Meep"
   homepage "https://github.com/cross-entropy-ai/moop"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/moop/releases/download/v0.1.0/moop_darwin_arm64.tar.gz"
-      sha256 "f8070dcbfa2b1414e579124b4d39c0b4241eb9710074d6f1029608b3e2292d29"
+      url "https://github.com/cross-entropy-ai/moop/releases/download/v0.1.1/moop_darwin_arm64.tar.gz"
+      sha256 "2dba48a93305ff139105d457c09f70c1087838e5ef8dd34e4c3e1c78f3e77ca4"
     else
-      url "https://github.com/cross-entropy-ai/moop/releases/download/v0.1.0/moop_darwin_amd64.tar.gz"
-      sha256 "638d917295c7950b9967e38575071b4a37b1a4fe03945cb21fcff5711139b481"
+      url "https://github.com/cross-entropy-ai/moop/releases/download/v0.1.1/moop_darwin_amd64.tar.gz"
+      sha256 "dceafb51394271f122c596f89425aeb58945a6ec36bd6484585261e2c8d80e7d"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/cross-entropy-ai/moop/releases/download/v0.1.0/moop_linux_arm64.tar.gz"
-      sha256 "0132b832156e834cd4c69ebdf76e0f3678bbfb1a4a722697d1c23e7063076ef1"
+      url "https://github.com/cross-entropy-ai/moop/releases/download/v0.1.1/moop_linux_arm64.tar.gz"
+      sha256 "d8634a798c7734d5128d6cf7e92a04f9733b7700a875c1328d609c167ea43ee3"
     else
-      url "https://github.com/cross-entropy-ai/moop/releases/download/v0.1.0/moop_linux_amd64.tar.gz"
-      sha256 "789ac73ff2a6b0eaf6df99caf3d71e1331c051b008fbbc7599700634373a0778"
+      url "https://github.com/cross-entropy-ai/moop/releases/download/v0.1.1/moop_linux_amd64.tar.gz"
+      sha256 "f8ddfd54a2686abb0499f8b234e3bd3f62c3957d204d79fa9cda8299ea5d6186"
     end
   end
 
